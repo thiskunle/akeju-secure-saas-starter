@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this work, please credit its author."
+title: "Akeju Secure SaaS Starter"
+abstract: "Next.js and FastAPI starter with MFA, roles, audit logs and tenant isolation."
+type: software
+authors:
+  - family-names: Akeju
+    given-names: Adekunle
+repository-code: "https://github.com/thiskunle/akeju-secure-saas-starter"
+license: AGPL-3.0-or-later
+date-released: 2026-11-08

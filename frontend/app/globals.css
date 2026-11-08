@@ -1,0 +1,36 @@
+/* Copyright (c) 2026 Adekunle Akeju. All rights reserved except as licensed.
+   Akeju Secure SaaS Starter, created by Adekunle Akeju. SPDX-License-Identifier: AGPL-3.0-or-later */
+:root {
+  --bg: #eef1f8;
+  --panel: #ffffff;
+  --ink: #1b2340;
+  --muted: #566085;
+  --line: #c9d0e4;
+  --action: #3a2fb0;
+  --on-action: #ffffff;
+  --bad: #a3123f;
+  color-scheme: light dark;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #171a2b; --panel: #21253b; --ink: #edeffa; --muted: #aab1cf; --line: #3b4163; --action: #a9a2ff; --on-action: #171a2b; --bad: #ff9db8; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.5 "Segoe UI", system-ui, sans-serif; }
+main { max-width: 720px; margin: 0 auto; padding: 48px 16px; }
+h1 { font-size: 30px; line-height: 1.2; margin: 0 0 4px; }
+h2 { font-size: 20px; margin: 0 0 12px; }
+p { margin: 0 0 16px; }
+.muted { color: var(--muted); }
+section { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 20px; margin: 16px 0; }
+form { display: grid; gap: 12px; }
+label { display: grid; gap: 4px; font-weight: 600; font-size: 14px; }
+input { font: inherit; padding: 9px 10px; border: 1px solid var(--muted); border-radius: 4px; background: transparent; color: inherit; }
+button { font: inherit; font-weight: 600; padding: 9px 14px; border: 1px solid var(--action); border-radius: 4px; background: var(--action); color: var(--on-action); cursor: pointer; }
+button.quiet { background: transparent; color: var(--action); }
+:focus-visible { outline: 2px solid var(--action); outline-offset: 2px; }
+.row { display: flex; gap: 8px; justify-content: space-between; align-items: center; flex-wrap: wrap; }
+.error { color: var(--bad); font-weight: 600; }
+ul { list-style: none; margin: 0; padding: 0; }
+li { padding: 6px 0; border-bottom: 1px solid var(--line); overflow-wrap: anywhere; }
+code { overflow-wrap: anywhere; }
+footer { color: var(--muted); font-size: 14px; margin-top: 24px; }

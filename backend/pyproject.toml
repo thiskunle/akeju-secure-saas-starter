@@ -1,0 +1,10 @@
+[project]
+name = "akeju-secure-saas-starter-backend"
+version = "0.1.0"
+authors = [{ name = "Adekunle Akeju" }]
+license = "AGPL-3.0-or-later"
+requires-python = ">=3.11"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
